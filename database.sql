@@ -1,0 +1,1 @@
+INSERT INTO `paymentmethods` (`methodId`, `methodName`, `methodLogo`, `methodVisibleName`, `methodCallback`, `methodMin`, `methodMax`, `methodFee`, `methodBonusPercentage`, `methodBonusStartAmount`, `methodCurrency`, `methodStatus`, `methodExtras`, `methodPosition`, `methodInstructions`) VALUES (77, NULL, NULL, NULL, NULL, '1', '1', '0', '0', '0', NULL, '0', NULL, NULL, NULL)
