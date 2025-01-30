@@ -25,7 +25,7 @@ $insert->execute([
     "mode" => "Automatic",
     "date" => date("Y-m-d H:i:s"), // Fixed date format
     "ip" => GetIP(),
-    "extra" => ''
+    "extra" => $orderId
 ]);
 
 $endpoint = 'https://tzsmmpay.com/api/payment/create';
