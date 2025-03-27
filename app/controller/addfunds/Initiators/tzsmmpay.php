@@ -49,6 +49,23 @@ $paymentUrl = $endpoint . '?' . http_build_query($params, '', '&', PHP_QUERY_RFC
 // Save transaction ID in session for tracking (Optional)
 $_SESSION["tzsmmPayTransactionID"] = $orderId;
 
+
+
+// If Does't work use this
+// if (!empty($paymentUrl)) {
+//     header("Location: " . $paymentUrl);
+//     exit(); // Always add exit() after header() to stop further execution
+// } else {
+//     echo "Error: Payment URL is empty.";
+// }
+
+
+
+
+
+
+
+
 $redirectForm .= '<script type="text/javascript">
 window.location.href = "' . $paymentUrl . '";
 </script>';
